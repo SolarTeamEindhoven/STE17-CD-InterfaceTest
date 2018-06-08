@@ -44,11 +44,5 @@ private:
     }vieNetworkData;
 #pragma pack(pop)
 
-#pragma pack(push, 1)
-    struct cdData {
-        bool active;
-        int32_t setpoint;
-    }cdHostData;
-#pragma pack(pop)
 };
 #endif // MAINWINDOW_H

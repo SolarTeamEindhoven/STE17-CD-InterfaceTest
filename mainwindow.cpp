@@ -145,16 +145,18 @@ void MainWindow::handleClientDisconnection() {
 
 void MainWindow::readResponse() {
     if (client->bytesAvailable() >= 5) {
+//        QByteArray data = client->read(5);
+//        qDebug() << data;
+
         char networkBytes[5];
         client->read(networkBytes, 5);
-        cdData hostData;
-        hostData.active = networkBytes[0];
-        hostData.setpoint = (networkBytes[4] << 24) | (networkBytes[3] << 16) | (networkBytes[2] << 8) | (networkBytes[1]);
-        socSetpoint = hostData.setpoint;
 
-        ui->currentSetpointLabel->setText(QString(socSetpoint));
-        ui->receiveControlLabel->setText(QString(hostData.active));
-        ui->receiveSetpointLabel->setText(QString(socSetpoint));
+        bool active = networkBytes[0];
+        socSetpoint = ((unsigned char)(networkBytes[1]) << 24) | ((unsigned char)(networkBytes[2]) << 16) | ((unsigned char)(networkBytes[3]) << 8) | ((unsigned char)(networkBytes[4]));
+
+        ui->currentSetpointLabel->setText(QString().number(socSetpoint));
+        ui->receiveControlLabel->setText((active ? QString("true") : QString("false")));
+        ui->receiveSetpointLabel->setText(QString().number(socSetpoint));
     }
 }
 /*

@@ -50,7 +50,7 @@
         <item row="0" column="1">
          <widget class="QLabel" name="label_4">
           <property name="text">
-           <string>Sturing actief:</string>
+           <string>Control active</string>
           </property>
          </widget>
         </item>
@@ -64,7 +64,7 @@
         <item row="2" column="1">
          <widget class="QLabel" name="label_6">
           <property name="text">
-           <string>Setpoint:</string>
+           <string>SoC setpoint</string>
           </property>
          </widget>
         </item>
@@ -115,14 +115,14 @@
       <item row="2" column="4">
        <widget class="QPushButton" name="sendButton">
         <property name="text">
-         <string>Verstuur</string>
+         <string>Send</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Auto:</string>
+         <string>Car</string>
         </property>
        </widget>
       </item>
@@ -230,14 +230,14 @@
            <item>
             <widget class="QRadioButton" name="coupledTrueRadioButton">
              <property name="text">
-              <string>Ja</string>
+              <string>True</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QRadioButton" name="coupledFalseRadioButton">
              <property name="text">
-              <string>Nee</string>
+              <string>False</string>
              </property>
              <property name="checked">
               <bool>true</bool>
@@ -250,7 +250,7 @@
         <item row="0" column="0">
          <widget class="QLabel" name="label_5">
           <property name="text">
-           <string>Gekoppeld:</string>
+           <string>Coupled</string>
           </property>
          </widget>
         </item>
@@ -270,14 +270,14 @@
            <item>
             <widget class="QRadioButton" name="localControlTrueButton">
              <property name="text">
-              <string>Ja</string>
+              <string>True</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QRadioButton" name="localControlFalseButton">
              <property name="text">
-              <string>Nee</string>
+              <string>False</string>
              </property>
              <property name="checked">
               <bool>true</bool>
@@ -290,7 +290,7 @@
         <item row="2" column="0">
          <widget class="QLabel" name="label_7">
           <property name="text">
-           <string>State of Charge:</string>
+           <string>State of Charge</string>
           </property>
          </widget>
         </item>
@@ -304,7 +304,7 @@
         <item row="4" column="0">
          <widget class="QLabel" name="label_8">
           <property name="text">
-           <string>Bediening lokaal</string>
+           <string>Local Control</string>
           </property>
          </widget>
         </item>
@@ -314,7 +314,7 @@
         <item row="6" column="0">
          <widget class="QLabel" name="label_12">
           <property name="text">
-           <string>Actueel Vermogen:</string>
+           <string>Actual Power</string>
           </property>
          </widget>
         </item>
@@ -335,7 +335,7 @@
         <item row="8" column="0">
          <widget class="QLabel" name="label_13">
           <property name="text">
-           <string>Setpoint State of Charge:</string>
+           <string>SoC setpoint</string>
           </property>
          </widget>
         </item>
