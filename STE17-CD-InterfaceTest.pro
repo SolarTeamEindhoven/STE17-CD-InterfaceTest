@@ -26,12 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    clientwindow.cpp
+    clientwindow.cpp \
+    laadpaal.cpp
 
 HEADERS += \
         mainwindow.h \
-    clientwindow.h
+    clientwindow.h \
+    laadpaal.h
 
 FORMS += \
         mainwindow.ui \
-    clientwindow.ui
+    clientwindow.ui \
+    laadpaal.ui
